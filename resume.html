@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>RESUME</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Bio-data</a>
+        </nav>
+        <button id="theme-toggle">🌙</button>
+    </header>
+    <main class="resume-container">
+        <div class="header-container">
+            <div class="header-left">
+                <h1>SPARSHA POOLAKKAL</h1>
+                <p>#2, Green Paradise Layout,<br> Next to Assisi School, Opposite to DS Max, <br> Bangalore, Karnataka - 560036</p>
+                <p>Email: <a href="posp22cs@cmrit.ac.in">posp22cs@cmrit.ac.in</a></p>
+                <p>Mobile: +91 9535737061</p>
+            </div>
+            <div class="header-right">
+                <img src="SPA.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    
+        <section>
+            <h2>Career Objective</h2>
+            <p id="career-text">
+                Determined and hardworking person looking for a challenging job within a rapidly growing organization where I can
+                <span id="dots">...</span>
+                <span id="more-text" style="display: none;">  implement my technical skills and theoretical knowledge in real-time approaching situations to benefit both my career and the organization.</span>
+            </p>
+            <button id="read-more-btn">Read More..</button>
+        </section>
+        
+        
+        <section>
+            <h2>Education Qualification</h2>
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Engineering – Computer Science and Engineering</td>
+                    <td>CMR Institute of Technology, Bengaluru</td>
+                    <td>2026 (Pursuing)</td>
+                    <td>8.45 CGPA</td>
+                </tr>
+                <tr>
+                    <td>Pre-University Course – Science</td>
+                    <td>Mount Carmel PU College, Vasanth Nagar</td>
+                    <td>2022</td>
+                    <td>90.84%</td>
+                </tr>
+                <tr>
+                    <td>SSLC</td>
+                    <td>Cambridge School, Bengaluru</td>
+                    <td>2020</td>
+                    <td>89%</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: Basic knowledge in C Programming, C++, Python, R and Java</li>
+                <li>Database: MySQL (basic)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Movie Success Prediction using ML:</strong> Developed a system to predict the success of upcoming movies using machine learning techniques in Python. 
+                    <em>Tools used:</em> Python, Excel.
+                </li>
+                <li>
+                    <strong>Hospital Management System:</strong> Built a platform for storing and maintaining hospital records with interfaces for patients, doctors, and admins.
+                    <em>Tools used:</em> HTML, CSS, PHP, MySQL Server.
+                </li>
+                <li>
+                    <strong>Smart Attendance using Face Recognition: </strong> Demonstrated ability to create scalable, user-friendly, and efficient automated attendance solutions.
+                    <em>Tools used:</em> Python, OpenCV, Haar Cascade Classifier, Face Recognition API.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Achievements & Activities</h2>
+            <ul>
+                <li>Part of CMRIT E cell, ASPIRO</li>
+                <li>Part of the IIC club, CMRIT</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2>Co-Curricular Activities & Extra-Curricular Activities</h2>
+            <h3>Co-Curricular Activities</h3>
+            <h4>Seminars:</h4>
+            <ul>
+                <li>Attended “5th Guru Kalam Memorial Lecture & IIF Award Ceremony” on 6th November 2021 at Seasons Hall, Royal Orchid Hotel, Old Airport Road, Bengaluru.</li>
+                <li>Attended a seminar on the topic “Problem Solving & Ideation” on 20th November 2021, CMRIT.</li>
+            </ul>
+            <h4>Certifications:</h4>
+            <ul>
+                <li>Data structures and Algorithms (Infosys Springboard).</li>
+                <li>Introduction to Artificial Intelligence (Infosys Springboard).</li>
+            </ul>
+        
+            <h3>Extra-Curricular Activities</h3>
+            <ul>
+                <li>Organized Mentors and Mentees Event,24 from IIC of CMRIT.</li>
+                <li>Part of Aspiro E-Cell CMRIT</li>
+                <li>Conducted various events at Aspiro CMRIT.</li>
+            </ul>
+        </section>
+        
+
+        
+        <section>
+            <h2>Personal Details</h2>
+            <p><strong>Date of Birth:</strong> 22/10/2003</p>
+            <p><strong>Gender:</strong> Female</p>
+            <p><strong>Nationality:</strong> Indian</p>
+            <p><strong>Marital Status:</strong> Single</p>
+            <p><strong>Permanent Address:</strong> #2 Krishn Sparsh, Green Paradise Layout, Next to Assisi School , Banglore-36</p>
+            <p><strong>Languages Known:</strong> Malayalam,Kannada, English, Hindi</p>
+            <p><strong>Hobbies:</strong> Athletics, Outdoor games, Painting, Reading Books</p>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p>© 2024 Sparsha Poolakkal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Get the required elements
+const dots = document.getElementById("dots");
+const moreText = document.getElementById("more-text");
+const readMoreBtn = document.getElementById("read-more-btn");
+
+// Add a click event listener to the button
+readMoreBtn.addEventListener("click", () => {
+    if (dots.style.display === "none") {
+        // If expanded, hide the additional text and show dots
+        dots.style.display = "inline";
+        moreText.style.display = "none";
+        readMoreBtn.textContent = "Read More";
+    } else {
+        // If collapsed, show the additional text and hide dots
+        dots.style.display = "none";
+        moreText.style.display = "inline";
+        readMoreBtn.textContent = "Read Less";
+    }
+});
+
+    </script>
+</body>
+</html>
